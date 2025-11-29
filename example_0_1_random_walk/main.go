@@ -11,7 +11,6 @@ var (
 )
 
 func main() {
-	// Init Canvas stuff
 	doc := js.Global().Get("document")
 	canvasEl := doc.Call("getElementById", "mycanvas")
 	width = canvasEl.Get("clientWidth").Float()
