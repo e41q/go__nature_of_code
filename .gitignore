@@ -1,0 +1,83 @@
+### macOS ###
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+### macOS Patch ###
+# iCloud generated files
+*.icloud
+
+### Go ###
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool
+*.out
+
+# Output of the go bench tool
+*.benchout
+
+# Dependency directories (remove the comment below if you want to ignore the vendor folder)
+# vendor/
+
+# Go workspace file (for Go 1.18+)
+go.work
+go.work.sum
+
+# Go build cache
+.gocache/
+
+# IDE and editors
+/.idea/
+/.vscode/
+/.gigaide/
+/.tool/
+*.swp
+*.swo
+*~
+/.history
+
+# Logs, temporary and system files
+log/
+logs/
+*.log
+tmp/
+temp/
+dist/
+
+# Environment variables file (if used)
+.env
+.env.local
+
+# Coverage and profiling
+coverage.html
+profile.out
+cpu.prof
+mem.prof
