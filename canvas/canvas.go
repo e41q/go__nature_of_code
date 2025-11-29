@@ -46,3 +46,27 @@ func (c *Canvas) FillCircle(x, y, d float64) {
 	c.ctx.Call("arc", x, y, d, 0, math.Pi*2)
 	c.ctx.Call("fill")
 }
+
+func (c *Canvas) Stroke(color string) {
+	c.ctx.Set("strokeStyle", color)
+}
+
+func (c *Canvas) NoFill() {
+	c.ctx.Set("fillStyle", "transparent")
+}
+
+func (c *Canvas) StrokeWeight(weight float64) {
+	c.ctx.Set("lineWidth", weight)
+}
+
+func (c *Canvas) BeginShape() {
+	c.ctx.Call("beginPath")
+}
+
+func (c *Canvas) Vertex(x, y float64) {
+	c.ctx.Call("lineTo", x, y)
+}
+
+func (c *Canvas) EndShape() {
+	c.ctx.Call("stroke")
+}
