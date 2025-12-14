@@ -24,7 +24,6 @@ func main() {
 		return nil
 	})
 
-	// Start running
 	js.Global().Call("requestAnimationFrame", renderFrame)
 
 	select {}
